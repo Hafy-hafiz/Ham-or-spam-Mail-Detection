@@ -44,32 +44,38 @@ Spam → Unwanted or promotional message
 
 Dataset columns:
 
-v1 → Label (ham / spam)
-v2 → Message text
+v1 → Label (ham / spam),
+v2 → Message text.
+
+
 Project Workflow
+
+
 Load and clean dataset
 Perform text preprocessing:
-Lowercasing
-Removing special characters
-Tokenization
-Lemmatization
-Stopword removal
-Convert text into vectors using TF-IDF
-Split data into train/test sets
-Handle class imbalance using SMOTE
-Train multiple ML models
-Evaluate model performance
-Select best model based on Recall
-Save best model and TF-IDF vectorizer
-Build Streamlit app for prediction
-Model Evaluation Metrics
+Lowercasing,
+Removing special characters,
+Tokenization,
+Lemmatization,
+Stopword removal,
+Convert text into vectors using TF-IDF,
+Split data into train/test sets,
+Handle class imbalance using SMOTE,
+Train multiple ML models,
+Evaluate model performance,
+Select best model based on Recall,
+Save best model and TF-IDF vectorizer,
+Build Streamlit app for prediction,
+Model Evaluation Metrics,
 
 The models are evaluated using:
 
-Accuracy – Overall correctness
-Precision – How many predicted spam messages were actually spam
-Recall – How many actual spam messages were correctly detected
-F1-Score – Balance between Precision and Recall
+Accuracy – Overall correctness,
+Precision – How many predicted spam messages were actually spam,
+Recall – How many actual spam messages were correctly detected,
+F1-Score – Balance between Precision and Recall,
+
+
 Why Recall?
 
 For spam detection, Recall is the most important metric because missing a spam message (False Negative) is more harmful than incorrectly marking a ham message as spam.
